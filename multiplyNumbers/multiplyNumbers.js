@@ -1,4 +1,5 @@
 const inArr = [2, 4, 5, 9];
+// slow way
 const multiplyNums = (arr) => {
   let multiArr = [];
   for (let i=0; i < inArr.length; i++) {
@@ -16,6 +17,7 @@ const multiplyNums = (arr) => {
 };
 multiplyNums(inArr);
 
+// faster way
 const multiplyNumsTwo = (arrTwo) => {
   const multiArrTwo = [];
   const allMult = arrTwo.reduce(function(a,b){return a*b;});
